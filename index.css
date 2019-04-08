@@ -108,11 +108,23 @@ h1 {
 .bot img {
     width: 350px;
 }
+.bot iframe {
+    margin: 20px;
+    width: 800px;
+}
 .artister img {
     width: 350px;
 }
 .bot p {
 
+}
+input {
+    width: 30px;
+    padding: 10px;
+}
+.bot button {
+    margin-top: 80px;
+    padding: 10px;
 }
 .artister p {
     margin-top: 65px;
