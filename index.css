@@ -36,7 +36,7 @@ body {
 
 }
 .kontainer {
-    width: 1000px;
+    width: 80%;
     margin: auto;
 }
 /* Meny */
@@ -55,15 +55,19 @@ header nav {}
 header ul {}
 header li {
     display: inline;
-    padding: 20px;
+    margin: 20px;
     font-size: 20px;
 }
 header li a {
     color: rgb(235, 235, 235);
     text-decoration: none;
+    transition-duration: 0.3s;
 
 }
 header li a:hover {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+header .active {
     border-bottom: 2px solid rgb(255, 255, 255);
 }
 /* Titel */
@@ -84,7 +88,7 @@ h1 {
     margin-top: 5px;
     font-family: 'Libre Barcode 39', cursive;
 }
-/* Sidans botten */
+/* Sidans huvudinnehåll */
 
 .bot {
     margin-top: 45vh;
@@ -95,6 +99,7 @@ h1 {
     font-family: 'Libre Franklin', sans-serif;
     margin-bottom: 50px;
     padding-top: 100px;
+    width: 100%;
 }
 .artister {
     margin-top: 45vh;
@@ -106,7 +111,9 @@ h1 {
     font-family: 'Libre Franklin', sans-serif;
 }
 .bot img {
+    max-width: 100%;
     width: 350px;
+    
 }
 .bot iframe {
     margin: 20px;
@@ -114,6 +121,12 @@ h1 {
 }
 .artister img {
     width: 350px;
+}
+.info2 {
+width: 100%;
+}
+.info2 iframe {
+    margin: auto;
 }
 .bot p {
 
@@ -139,6 +152,7 @@ input {
     padding: 5px;
     border-radius: 3px;
     box-shadow: 1px 1px 5px black;
+    transition-duration: 0.5s;
 }
 .bot a:hover {
     color: white;
@@ -153,8 +167,14 @@ footer {
     text-align: center;
     color: black;
     font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
     
 }
+
 footer .first {
     margin-left: 50px;
+}
+/* Responsiv layout */
+@media(max-width: 520px) {
+    footer{font-size: 3vw}
 }
